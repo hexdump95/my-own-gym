@@ -1,0 +1,16 @@
+jwt:
+  issuer: hexdump95
+  secretKey: '12345678901234567890123456789012'
+  expiresAfterMinutes: 180
+spring:
+  datasource:
+    url: 'jdbc:oracle:thin:@//localhost/FREE'
+    username: system
+    password: secret
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+springdoc:
+  swagger-ui:
+    path: /swagger
